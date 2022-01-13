@@ -5,7 +5,7 @@ Jan93=0  Feb93=0  Mar93=0  Apr93=0  May93=0  Jun93=0  Jul93=0  Aug93=0  Sep93=0 
 
 for(( i=1 ;i<=$max_limit ;i++ ))
 do
-  birth=$((RANDOM%25+1))
+  birth=$((RANDOM%24+1))
   case $birth in 
          1)
             Jan92=$(($Jan92+1))
@@ -120,5 +120,17 @@ echo "sep : $Sep92"
 echo "oct : $Oct92"
 echo "nov : $Nov92"
 echo "dec : $Dec92"
+echo "jan : $Jan93"
+echo "feb : $Feb93"
+echo "mar : $Mar93"
+echo "apr : $Apr93"
+echo "may : $May93"
+echo "jun : $Jun93"
+echo "jul : $Jul93"
+echo "aug : $Aug93"
+echo "sep : $Sep93"
+echo "oct : $Oct93"
+echo "nov : $Nov93"
+echo "dec : $Dec93"
 total=$(($Jan92+$Feb92+$Mar92+$Apr92+$May92+$Jun92+$Jul92+$Aug92+$Sep92+$Oct92+$Nov92+$Dec92+$Jan93+$Feb93+$Mar93+$Apr93+$May93+$Jun93+$Jul93+$Aug93+$Sep93+$Oct93+$Nov93+$Dec93))
 echo "total : $total "
